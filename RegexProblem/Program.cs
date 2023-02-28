@@ -16,7 +16,7 @@ namespace RegexProblem
             regexPatten.ValidateMobileNumber("91 7021734837");
             regexPatten.ValidatePasswordRoule1("password");
             regexPatten.ValidatePasswordRoule2("pasSword");
-            
+            regexPatten.ValidatePasswordRoule3("pasSword1");
             Console.ReadLine();
 
         }

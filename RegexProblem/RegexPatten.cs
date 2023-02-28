@@ -84,7 +84,18 @@ namespace RegexProblem
                 Console.WriteLine("Password not Valid ");
             }
         }
-        
+        public void ValidatePasswordRoule3(string password)
+        {
+            string passwordPatten = "(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}";
+            if (Regex.IsMatch(password, passwordPatten))
+            {
+                Console.WriteLine("Password is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Password not Valid ");
+            }
+        }
 
     }
 }

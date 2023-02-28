@@ -17,6 +17,7 @@ namespace RegexProblem
             regexPatten.ValidatePasswordRoule1("password");
             regexPatten.ValidatePasswordRoule2("pasSword");
             regexPatten.ValidatePasswordRoule3("pasSword1");
+            regexPatten.ValidatePasswordRoule4("pasSword@_123");
             Console.ReadLine();
 
         }

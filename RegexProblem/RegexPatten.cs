@@ -44,9 +44,34 @@ namespace RegexProblem
             {
                 Console.WriteLine("Email not Valid ");
             }
-
         }
 
+        public void ValidateMobileNumber(string mobileNumber)
+        {
+            string mobileNumberPatten = @"[0-9]{1,2}[ ][0-9]{10}"; /*@"[0-9]{1,2}\s[0-9]{10}"*/
+            if (Regex.IsMatch(mobileNumber, mobileNumberPatten))
+            {
+                Console.WriteLine("Mobile Number is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Mobile Number not Valid ");
+            }
+        }
 
+        public void ValidatePasswordRoule1(string password)
+        {
+            string passwordPatten = @"[A-Z a-z 0-9]{8,}";
+            if (Regex.IsMatch(password, passwordPatten))
+            {
+                Console.WriteLine("Password is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Password not Valid ");
+            }
+        }
+
+        
     }
 }

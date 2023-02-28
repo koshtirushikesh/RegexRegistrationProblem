@@ -13,6 +13,8 @@ namespace RegexProblem
             RegexPatten regexPatten = new RegexPatten();
             regexPatten.ValidateName("Rushi","Koshti");
             regexPatten.ValidateEmail("abc.xyz@bl.co.in");
+            regexPatten.ValidateMobileNumber("91 7021734837");
+            regexPatten.ValidatePasswordRoule1("password");
             Console.ReadLine();
 
         }

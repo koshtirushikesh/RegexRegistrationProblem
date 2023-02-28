@@ -15,6 +15,8 @@ namespace RegexProblem
             regexPatten.ValidateEmail("abc.xyz@bl.co.in");
             regexPatten.ValidateMobileNumber("91 7021734837");
             regexPatten.ValidatePasswordRoule1("password");
+            regexPatten.ValidatePasswordRoule2("pasSword");
+            
             Console.ReadLine();
 
         }

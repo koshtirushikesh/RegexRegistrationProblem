@@ -12,6 +12,7 @@ namespace RegexProblem
         {
             RegexPatten regexPatten = new RegexPatten();
             regexPatten.ValidateName("Rushi","Koshti");
+            regexPatten.ValidateEmail("abc.xyz@bl.co.in");
             Console.ReadLine();
 
         }

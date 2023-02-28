@@ -31,6 +31,22 @@ namespace RegexProblem
             }
         }
 
-        
+        public void ValidateEmail(string email)
+        {
+            //abc.xyz@bl.co.in
+            string emailPatten = "^[a-zA-Z]+[.+_-]{0,1}[a-z]+[@][a-zA-Z]+[.][a-z]{2,3}([.][a-z]{2}){0,1}$";
+
+            if (Regex.IsMatch(email, emailPatten))
+            {
+                Console.WriteLine("Email is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Email not Valid ");
+            }
+
+        }
+
+
     }
 }

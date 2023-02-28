@@ -10,16 +10,24 @@ namespace RegexProblem
     internal class RegexPatten
     {
 
-        public void ValidateFirstName(string firstName)
+        public void ValidateName(string firstName,string lastName)
         {
-            string firstNamePatten = "^[A-Z][a-z]{3,}?";
+            string NamePatten = "^[A-Z][a-z]{3,}?";
 
-            if(Regex.IsMatch(firstName, firstNamePatten)) 
+            if(Regex.IsMatch(firstName, NamePatten)) 
             {
                 Console.WriteLine("First Name is Valid");
             }else
             {
                 Console.WriteLine("First Name not Valid ");
+            }
+            if(Regex.IsMatch(lastName, NamePatten))
+            {
+                Console.WriteLine("Last Name is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Last Name not Valid ");
             }
         }
 

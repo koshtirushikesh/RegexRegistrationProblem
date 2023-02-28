@@ -11,7 +11,7 @@ namespace RegexProblem
         static void Main(string[] args)
         {
             RegexPatten regexPatten = new RegexPatten();
-            regexPatten.ValidateFirstName("Rushi");
+            regexPatten.ValidateName("Rushi","Koshti");
             Console.ReadLine();
 
         }
